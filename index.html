@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Bootstrap 4 CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+  <title>Hangman</title>
+</head>
+<body>
+<div class="container">
+  <h1 class="text-center">Hangman</h1>
+  <div class="float-right">Wrong Guesses: 
+      <span id='mistakes'>0</span> of <span id='maxWrong'></span>
+      <br>
+      Lost: <span id='numberLost'>0</span>
+      <br>
+      Find: <span id='numberWin'>0</span>
+</div>
+  <div class="text-center">
+    <img id='hangmanPic' src="./images/0.jpg" alt="">
+    <p>Guess the Cybersecurity word:</p>
+    <p id="wordSpotlight">The word to be guessed goes here</p>
+    <div id="keyboard"></div>
+    <div id="container"></div>
+    <button id="button" class="btn btn-info" onClick="reset()">Reset</button>
+  </div> 
+  <br>
+  <div>
+      <h1>Rules</h1>
+      <li>Find 3 words to unlock the password</li>
+      <li>You have 6 guesses to find the specific word</li>
+      <li>if you lose 3 times, you will need to find 1 more word (I can see you spammers! :D), you can check at the top-right how many loses and finding you have</li>
+      <li>any other question? call Taka</li>
+      <li>Even though...</li>
+      <li>I think he will not tell you much</li>
+      <li>and yeah, the last character is a space between words, you will need it sometimes</li>
+  </div>
+</div>
+
+<script src='./js/hangman.js'></script>
+</body>
+</html>
